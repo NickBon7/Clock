@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(196, 225, 235);
+  text-shadow: 9px 7px 5px rgb(182, 181, 180);
+}
+
+#time {
+  display: flex;
+  gap: 50px;
+  color: rgb(190, 134, 49);
+}
+
+#time .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#time .circle svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+#time .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 4px;
+  transform: translate(5px, 5px);
+}
+
+#time .circle svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 440px;
+}
+
+#time div {
+  position: absolute;
+  text-align: center;
+  font-weight: 500px;
+  font-size: 3rem;
+}
+
+#hours:hover,
+#minutes:hover,
+#seconds:hover {
+  cursor: pointer;
+  scale: 1.3;
+}
+
+@media screen and (max-width: 600px) {
+  #time {
+    display: block;
+  }
+}
