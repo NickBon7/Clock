@@ -1,2 +1,2 @@
-
-https://nickbon7.github.io/Clock/
+Watch the time: https://nickbon7.github.io/Clock/
+:)
